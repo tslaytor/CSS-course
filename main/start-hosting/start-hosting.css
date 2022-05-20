@@ -20,14 +20,15 @@ main {
 .signup-form input,
 .signup-form select{
     display: block;
+    margin-top: 1rem;
     width: 100%;
 }
 
-/* .signup-form input[type="checkbox"], */
-.signup-form input[id*="agree"],
-.signup-form input[id*="agree"] + label {
+.signup-form input[type="checkbox"],
+/* .signup-form input[id*="AGREE" i], */
+.signup-form input[id*="AGREE" i] + label { 
     width: auto;
-    display: inline-block;
+    display: inline-block; 
 }
 
 .signup-form button[type="submit"]{
