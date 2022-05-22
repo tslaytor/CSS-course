@@ -24,6 +24,7 @@ main {
     width: 100%;
 }
 
+
 .signup-form input[type="checkbox"],
 .signup-form input[type="checkbox"] + label { 
     width: auto;
@@ -44,6 +45,11 @@ main {
     outline: none;
     border-color: #2ddf5c;
 
+}
+
+.signup-form input.invalid {
+    background-color: rgb(255, 133, 133);
+    border-color: red;
 }
 
 .signup-form input[type="checkbox"] {
