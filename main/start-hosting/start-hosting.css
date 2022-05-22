@@ -25,10 +25,40 @@ main {
 }
 
 .signup-form input[type="checkbox"],
-/* .signup-form input[id*="AGREE" i], */
-.signup-form input[id*="AGREE" i] + label { 
+.signup-form input[type="checkbox"] + label { 
     width: auto;
-    display: inline-block; 
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.signup-form input:not([type="checkbox"]),
+.signup-form select {
+    border: 1px solid #ccc;
+    padding: 0.2rem 0.5rem;
+    font: inherit;
+}
+
+.signup-form input:focus,
+.signup-form select:focus {
+    background-color: #d8f3df;
+    outline: none;
+    border-color: #2ddf5c;
+
+}
+
+.signup-form input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 2px solid firebrick;
+    background-color: white;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.signup-form input[type="checkbox"]:checked {
+    background-color: firebrick;
+    border: #ff5454;
 }
 
 .signup-form button[type="submit"]{
