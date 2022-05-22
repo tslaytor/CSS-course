@@ -47,11 +47,6 @@ main {
 
 }
 
-.signup-form input.invalid {
-    background-color: rgb(255, 133, 133);
-    border-color: red;
-}
-
 .signup-form input[type="checkbox"] {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -60,6 +55,13 @@ main {
     background-color: white;
     width: 1.5rem;
     height: 1.5rem;
+}
+
+.signup-form input.invalid,
+.signup-form select.invalid, 
+.signup-form :invalid {
+    background-color: rgb(255, 133, 133);
+    border-color: red !important;
 }
 
 .signup-form input[type="checkbox"]:checked {
