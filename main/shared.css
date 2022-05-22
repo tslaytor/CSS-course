@@ -120,24 +120,24 @@ main {
     background: white;
     width: 80%;
     height: 100vh;
-  }
+}
   
-  .mobile-nav__items {
+.mobile-nav__items {
     width: 90%;
     height: 100%;
     list-style: none;
     margin: 10% auto;
     padding: 0;
     text-align: center;
-  }
-  
-  .mobile-nav__item {
+}
+
+.mobile-nav__item {
     margin: 1rem 0;
-  }
-  
-  .mobile-nav__item a {
+}
+
+.mobile-nav__item a {
     font-size: 1.5rem;
-  }
+}
 
 
 .button {
@@ -159,6 +159,13 @@ main {
 
 .button:focus {
     outline: none;
+}
+
+.button[disabled] {
+    cursor: not-allowed;
+    background-color: #ccc;
+    border-color: #a1a1a1;
+    color: #a1a1a1;
 }
 
 .toggle-button {
