@@ -65,10 +65,11 @@ main {
     font-size: 1.2rem;
     color: #0e4f1f;
     background: white;
-    font-family: "suckyaMum", sans-serif;
-    font-weight: 900;
+    font-family: "roboto", sans-serif;
+    font-weight: 400;
     font-style: italic;
-    letter-spacing: 10px;
+    line-height: 1;
+    text-shadow: 3px 3px 5px rgb(161, 161, 161);
 }
 
 .clearfix {
