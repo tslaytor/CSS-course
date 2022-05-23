@@ -68,6 +68,7 @@ main {
     font-family: "suckyaMum", sans-serif;
     font-weight: 900;
     font-style: italic;
+    letter-spacing: 10px;
 }
 
 .clearfix {
