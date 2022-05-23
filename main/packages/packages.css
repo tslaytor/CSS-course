@@ -1,3 +1,14 @@
+@font-face {
+    font-family: suckYaMum;
+    src: url(orbitron-Regular.ttf);
+}
+
+@font-face {
+    font-family: suckYaMum;
+    src: url(orbitron-Black.ttf);
+    font-weight: 900;
+}
+
 main {
     padding-top: 2rem;
 }
@@ -54,7 +65,7 @@ main {
     font-size: 1.2rem;
     color: #0e4f1f;
     background: white;
-    font-family: "roboto", sans-serif;
+    font-family: "suckyaMum", sans-serif;
     font-weight: 900;
     font-style: italic;
 }
