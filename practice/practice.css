@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+}
+html,
+body {
+    box-sizing: border-box;
+    margin: 10;
+    height: 100%;
+}
+
+.piccy {
+    background-image: url("greg-weaver-NnWoLAqmxM4-unsplash.jpg");
+    background-color: blueviolet;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+
+.top-section {
+    height: 18rem;
+    background-color: red;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+    /* vertical-align: middle; */
+}
+
+.box {
+    display: inline-block;
+    height: 100%;
+    width: 30%;
+    background-color: blue;
+    border: 3px solid snow;
+    margin: 0 0.5rem;   
+    vertical-align: middle;
+    padding: 0.75rem;
+}
+
+.top-section .unique {
+    position: fixed;
+    background-color: white;
+}
+
+.moved {
+    position: relative;
+    top: 30px;
+    left: 30px;
+    z-index: 1;
+    background-color: cadetblue;
+}
+section.top-section {
+    background-color: aqua;
+    /* opacity: 0.2; */
+}
+
+section + div.top-section {
+    background-color: blueviolet;
+    opacity: 0.2;
+}
+
+.box p {
+    color: white;
+    vertical-align: middle;
+    position: relative;
+    top: 20%;
+    font: 1rem 700 proxima-nova, sans-serif;
+    /* margin: auto; */
+}
