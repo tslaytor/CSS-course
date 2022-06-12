@@ -1,0 +1,86 @@
+main {
+    padding-top: 43px;
+    padding-bottom: 3rem;
+    z-index: 0;
+}
+
+.background {
+    background: url("../images/shark-dh.jpeg") center/cover repeat border-box padding-box;
+    filter: invert(100%);
+    width: 100%;
+    height: 1000px;
+    z-index: -1;
+    position: fixed;
+}
+
+.package {
+    background: #cdf8db;
+    width: 80%;
+    padding: 2rem;
+    border: 4px rgb(0, 70, 0) solid;
+    margin-top: 1rem;
+    border-left: none;
+}
+
+.package:hover,
+.package:active {
+    border-color: #ff5454;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+#plus-plan {
+    position: relative;
+    z-index: 0;
+}
+
+#free-plan:hover,
+#free-plan:active
+{
+    border-left-color: #ff5454;
+}
+.package a {
+    text-decoration: none;
+    color: black;
+}
+
+.package h2 {
+    color: rgb(146, 146, 146);
+}
+
+.package__recommended {
+    position: absolute;
+    border: solid rgb(163, 5, 58) 2px;
+    background: rgb(196, 49, 98);
+    padding: 0.5rem;
+    color: white !important;
+    margin: 0;
+    top: 0.5rem;
+    right: 0.5rem;
+    z-index: 10;
+}
+
+.package p {
+    border: 2px rgb(0, 70, 0) solid;
+    color: 2px rgb(0, 70, 0) solid;
+    padding: 0.75rem;
+    background: white;
+}
+#free-plan {
+    background: #e3f7e9;
+    float: right;
+    border-right: none;
+    border-left: 4px rgb(0, 70, 0) solid;
+    text-align: right;
+}
+
+.fuk-ya-float {
+    clear: both;
+}
+
+#premium-plan {
+    background: rgb(3, 53, 3);
+}
+
+#premium-plan h1 {
+    color: white;
+}
