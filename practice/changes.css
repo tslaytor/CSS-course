@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 5rem;
+    background: darkgoldenrod;
+}
+
+.container {
+    width: 500px;
+    margin: auto;
+    text-align: center;
+}
+
+.buttons {
+    padding: 2rem;
+    display: inline-block;
+}
+
+.buttons button {
+    display: inline-block;
+    margin: 0 0.5rem;
+    color: white;
+    padding: 1rem;
+    border: none;
+    width: 70px;
+}
+
+.square {
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    background: rgb(3, 165, 116);
+}
+
+.no-display {
+    display: none !important;
+}
+
+.redButton {
+    background-color: rgb(156, 8, 8);
+}
+
+.greenButton {
+    background: rgb(3, 165, 116);;
+}

@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    padding: 10px;
+    background: cadetblue;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    color: white;
+}
+
+body {
+    border: deeppink 5px solid;
+    text-align: center;
+    margin-top: 100px;
+    min-width: 1081px;
+}
+
+
+/* html > div, */
+.container {
+    padding: 10px;
+    background: coral;
+    border: black 5px dashed;
+    display: inline-block;
+    vertical-align: top;
+    margin: 1rem;
+
+}
+
+.container > div {
+    background: rgb(0, 95, 95);
+    margin: 0.5rem;
+}
+
+.vmin-height {
+    height: 40vmin;
+    width: 200px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.vmax-height {
+    height: 40vmax;
+    width: 200px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.vmin-width{
+    height: 200px;
+    width: 40vmin;
+    margin: auto !important;
+}
+
+.vmax-width {
+    height: 200px;
+    width: 40vmax;
+    margin: auto !important;
+}
