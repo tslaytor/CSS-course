@@ -19,14 +19,18 @@ for (var i=0; i<selectedButtons.length; i++){
 // add event listener to backdrop and set action
 backdrop.addEventListener('click', close_modal)
 
-negative.addEventListener('click', close_modal)
+if (modal){
+    negative.addEventListener('click', close_modal)
+}
 
 function close_modal(){
     // backdrop.style.display = 'none';
     // modal.style.display = 'none';
     // mob_nav.style.display = 'none'
     backdrop.classList.remove('open')
-    modal.classList.remove('open')
+    if (modal){
+        modal.classList.remove('open')
+    }
     mob_nav.classList.remove('open')
 }
 

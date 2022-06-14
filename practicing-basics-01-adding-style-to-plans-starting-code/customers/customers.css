@@ -1,6 +1,7 @@
 .testimonials {
     width: 100%;
     margin: auto;
+    max-width: 975px;
 }
 
 .testimonial {
@@ -23,12 +24,14 @@
       width: 70%;
       vertical-align: middle;
       box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+      max-width: 680px;
   }
 
   .testimonial:first-of-type {
     margin-top: 96px;
   }
   
+
   .testimonial__info {
     text-align: right;
     padding: 14px;
@@ -37,6 +40,19 @@
     width: 25%;
   }
   
+
+  @media (max-width: 700px){
+    .testimonial__image-container {
+      display: block;
+      margin: auto;
+      width: 100%;
+    }
+    .testimonial__info {
+      width: 100%;
+    }
+  
+  }
+
   #customer-2.testimonial {
     text-align: right;
   }

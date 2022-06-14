@@ -13,6 +13,13 @@ main {
     position: fixed;
 }
 
+.packages {
+    width: 100%;
+    max-width: 1000px;
+    min-width: 350px;
+    margin: auto;
+}
+
 .package {
     background: #cdf8db;
     width: 80%;
@@ -51,7 +58,7 @@ main {
     position: absolute;
     border: solid rgb(163, 5, 58) 2px;
     background: rgb(196, 49, 98);
-    padding: 0.5rem;
+    padding: 0rem 0.5rem;
     color: white !important;
     margin: 0;
     top: 0.5rem;
@@ -71,6 +78,22 @@ main {
     border-right: none;
     border-left: 4px rgb(0, 70, 0) solid;
     text-align: right;
+}
+
+@media (min-width: 1002px){
+    .package {
+        border-left: 4px rgb(0, 70, 0) solid;
+    }
+
+    #free-plan {
+        border-right: 4px rgb(0, 70, 0) solid;
+    }
+
+    #free-plan:hover,
+    #free-plan:active
+    {
+        border-right-color: #ff5454;
+    }
 }
 
 .fuk-ya-float {

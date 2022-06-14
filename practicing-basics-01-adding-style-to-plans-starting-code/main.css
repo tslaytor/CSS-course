@@ -1,14 +1,3 @@
-.backdrop {
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.75);
-    top: 0;
-    left: 0;
-    z-index: 10;
-    display: none;
-}
-
 #product-overview {
     background: linear-gradient(to top, rgba(194, 167, 12, 0.4) 10%, transparent), url("freedom.jpg") left 10% bottom 20%/cover border-box padding-box, rgb(2, 65, 2);
     width: 100%;
@@ -16,6 +5,30 @@
     padding: 0.625rem;   
     margin-top: 43px;
     position: relative;
+}
+
+@media (min-width: 950px){
+    #product-overview {
+        background: linear-gradient(to top, rgba(194, 167, 12, 0.4) 10%, transparent), url("freedom.jpg") left 10% bottom 30%/cover border-box padding-box, rgb(2, 65, 2);
+    }
+}
+
+@media (min-width: 1000px){
+    #product-overview {
+        background: linear-gradient(to top, rgba(194, 167, 12, 0.4) 10%, transparent), url("freedom.jpg") left 10% bottom 40%/cover border-box padding-box, rgb(2, 65, 2);
+    }
+}
+
+@media (min-width: 1100px){
+    #product-overview {
+        background: linear-gradient(to top, rgba(194, 167, 12, 0.4) 10%, transparent), url("freedom.jpg") left 10% bottom 50%/cover border-box padding-box, rgb(2, 65, 2);
+    }
+}
+
+@media (min-width: 1200px){
+    #product-overview {
+        background: linear-gradient(to top, rgba(194, 167, 12, 0.4) 10%, transparent), url("freedom.jpg") left 10% bottom 70%/cover border-box padding-box, rgb(2, 65, 2);
+    }
 }
 
 .slogan {
@@ -35,10 +48,16 @@
     font-family: 'Anton', sans-serif;
 }
 
+#plans {
+    max-width: 938px;
+    margin: auto;
+}
+
 #plans > div {
     text-align: center;
-    width: 80%;
+    /* width: 80%; */
     margin: auto;
+    min-width: 700px;
 }
 
 .plan {
@@ -50,6 +69,20 @@
     margin: 0.5rem;
     padding: 1rem;
     text-align: center;
+}
+
+@media (max-width: 700px) {
+
+    .plan {
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+
+    #plans > div {
+        width: 100%;
+        min-width: 0px;
+    }
 }
 
 .plan h2 {
@@ -108,7 +141,8 @@
 
 .lower-section__items {
     padding: 0;
-    margin: 0;
+    margin: auto;
+    max-width: 750px;
 }
 
 .lower-section__item {

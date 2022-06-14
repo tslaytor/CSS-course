@@ -31,7 +31,19 @@ body {
     vertical-align: middle;
 }
 
+@media (max-width: 700px) {
 
+    .main-nav__items{
+        display: none;
+    }
+
+}
+
+@media (min-width: 700px){
+    .toggle-button {
+        display: none;
+    }
+}
 
 .mobile-nav {
     display: none;
@@ -131,6 +143,12 @@ body {
     
 }
 
+@media (max-width: 700px){
+    .footer__item{
+        display: block;
+    }
+}
+
 .footer__item a {
     color: white;
     text-decoration: none;
@@ -138,6 +156,8 @@ body {
 
 .toggle-button {
     width: 3rem;
+    height: 27px;
+    overflow: hidden;
     background: transparent;
     border: none;
     cursor: pointer;
@@ -165,3 +185,14 @@ body {
   .close {
       display: none;
   }
+
+  .backdrop {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: none;
+}
