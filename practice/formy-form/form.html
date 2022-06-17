@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" display="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta lang="en-us en-gb">
+        <link rel="stylesheet" href="form.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <div class="background"></div>
+        <div class="form-container">
+            <h1 class="form-title">Check out this form!</h1>
+            <form>
+                
+                <div class="question">
+                    <label for="drop">Which one sounds like you?</label>
+                    <select class="drop">
+                        <option value="cake">You have cake on your face</option>
+                        <option value="grease">Your hair is too greasy to cut with scissors</option>
+                        <option value="humiliation">Something small fell out of your mouth while you were talking to a group of people</option>
+                    </select>
+                </div>
+                <div class="question">
+                    <label for="first-text">Which body part are you most insecure about?</label>
+                    <input type="text" id="first_text">
+                </div>
+                <div class="question">
+                    <label for="second-text"> Why is it your nose?</label>
+                    <input type="text" id="second-text">
+                </div>
+                <div class="question">
+                    <label for="radio">What part of the word "radio" is your favorite?</label>
+                    <div class="radio">
+                        <div class="radio__opt">
+                            <label for="ra">ra</label>
+                            <input type="radio" name="form" id="ra" value="ra"> 
+                        </div>
+                        <div class="radio__opt">
+                            <label for="d">d</label>
+                            <input type="radio" name="form" id="d" value="d">
+                        </div>
+                        <div class="radio__opt">
+                            <label for="io">io</label>
+                            <input type="radio" name="form" id="io" value="io">
+                        </div>
+                    </div>
+                </div>
+                <div class="question">
+                    <label for="disclaimer">If you submit this form you agree that we own you now. Do you understand?</label>
+                    <select class="drop">
+                        <option value="yes">Yes</option>
+                        <option value="yes, of course">Yes, of course</option>
+                    </select>
+                </div>
+                <button type="submit">Submit</button>
+                
+            </form>
+        </div>
+        
+    </body>
+</html>

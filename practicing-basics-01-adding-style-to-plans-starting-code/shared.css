@@ -9,7 +9,7 @@ body {
 }
 
 main {
-    height: calc(100vh - 44px - 114px);
+    min-height: calc(100vh - 44px - 114px);
     margin-top: 43px;
 }
 
@@ -24,6 +24,10 @@ main {
     left: 0;
 }
 
+.main-header__link img {
+    width: 1.5rem;
+    height: auto;
+}
 .main-header > div {
     display: inline-block;
     vertical-align: middle;
