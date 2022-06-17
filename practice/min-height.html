@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UFT-8">
+        <meta lang="en-us">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="min-height.css">
+    </head>
+
+    <body>
+        <p class="text">the container for `min-height` grows if the content is bigger that itself, but it dosen't grow for `height`</p>
+        <div class="container">
+            <div class="min-height div">
+                <p>min-height: <br>(100vh - 4rem - 5px)</p>
+
+                <div class="content div">
+                    <p>content 1</p>
+                </div>
+                <div class="content div">
+                    <p>content 2</p>
+                </div>
+                <div class="content div">
+                    <p>content 3</p>
+                </div>
+                <div class="content div">
+                    <p>content 4</p>
+                </div>
+
+           </div>
+            <div class="height div">
+                <p>height: <br>calc(100vh - 4rem - 5px)</p>
+
+                <div class="content div">
+                    <p>content 1</p>
+                </div>
+                <div class="content div">
+                    <p>content 2</p>
+                </div>
+                <div class="content div">
+                    <p>content 3</p>
+                </div>
+                <div class="content div">
+                    <p>content 4</p>
+                </div>
+
+            </div>
+        </div>
+        
+    </body>
+</html>
