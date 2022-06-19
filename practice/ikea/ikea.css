@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.nav-bar {
+    /* border: black solid 2px; */
+    padding: 0 10px;
+    background-color: rgba(255,255,255,.95);
+    border-bottom: 1px solid #dee2e6;
+}
+
+.nav-wrap {
+    padding: 3.5px 0;
+}
+
+.logo {
+    /* width: 4.375rem; */
+    padding: 4.375px 3.5px 4.375px 0px;
+}
+
+.logo img {
+    /* vertical-align: bottom; */
+    width: 4.375rem;
+    display: block;
+}
