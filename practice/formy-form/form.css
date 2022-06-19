@@ -6,7 +6,7 @@ body {
     margin: 0;
     font-family: 'VT323', monospace;
     padding: 2rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
     position: relative;
 }
 
@@ -21,6 +21,11 @@ body {
     z-index: -1;
 }
 
+.form-container {
+    max-width: 700px;
+    margin: auto;
+}
+
 h1.form-title {
     text-align: center;
 }
@@ -30,11 +35,13 @@ input:not([type="radio"]),
 select {
     display: block;
     width: 100%;
+    height: fit-content;
+    padding: 0.5rem;
 }
 
 input,
 select {
-    height: 1.5rem;
+    /* height: 1.5rem; */
     background-color: rgb(255, 227, 241);
 }
 input:focus:not([type="radio"]),
@@ -49,14 +56,19 @@ select:focus {
 .question input[type="text"],
 .drop {
     font: inherit;
-    font-size: 1rem;
+    font-size: 1.5rem;
+}
+
+.radio {
+    border: solid black 1px;
+    background-color: white;
 }
 
 .radio .radio__opt {
     display: inline-block;
     /* border: black solid 1px; */
     text-align: center;
-    width: 10rem;
+    width: 30%;
 }
 
 .radio .radio__opt input[type="radio"] {
@@ -65,6 +77,7 @@ select:focus {
     height: 1rem;
     border-radius: 50%;
     border: solid black 1px;
+    margin: 0;
 
 }
 
