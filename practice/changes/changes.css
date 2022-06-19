@@ -1,3 +1,24 @@
+@font-face {
+    font-family: "Antonio";
+    src: url("antonio/Antonio-Regular.ttf");
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Antonio";
+    src: url("antonio/Antonio-Light.ttf");
+    font-weight: 200;
+    font-display: block;
+}
+
+@font-face {
+    font-family: "Antonio";
+    src: url("antonio/Antonio-Bold.ttf");
+    font-weight: 900;
+    font-display: fallback;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -5,6 +26,18 @@
 body {
     padding: 5rem;
     background: darkgoldenrod;
+}
+
+h1.regular {
+    font: small-caps italic 400 2rem/1 "Antonio", san-serif;
+}
+
+h1.bold {
+    font: small-caps italic 900 2rem/1 "Antonio", san-serif;
+}
+
+h1.light {
+    font: small-caps italic 200 2rem/1 "Antonio", san-serif;
 }
 
 .container {
