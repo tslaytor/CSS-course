@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box;
 }
@@ -6,11 +7,19 @@ body {
     margin: 0;
 }
 
+.body-wrap {
+    padding-top: 68.2031px;
+}
+
 .nav-bar {
     /* border: black solid 2px; */
     padding: 0 10px;
     background-color: rgba(255,255,255,.95);
     border-bottom: 1px solid #dee2e6;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 .nav-wrap {
@@ -18,12 +27,75 @@ body {
 }
 
 .logo {
-    /* width: 4.375rem; */
     padding: 4.375px 3.5px 4.375px 0px;
+    min-width: 73.5px
 }
 
 .logo img {
-    /* vertical-align: bottom; */
-    width: 4.375rem;
+    min-width: 4.375rem;
     display: block;
 }
+
+.nav-bar__items {
+    display: inline-block;
+    vertical-align: middle;
+    border: 1px solid black;
+    width: calc(100vw - 98.4px);
+    /* text-align: right; */
+    /* height: 28px; */
+}
+
+.nav-bar__item {
+    /* width: 30px; */
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.nav-bar__items img {
+    width: 37px;
+    height: 37px;
+    vertical-align: bottom;
+    /* display: inline-block; */
+}
+
+#like {
+    /* width: 25px; */
+    padding: 0 6px;
+}
+
+#trolly {
+    display:inline-block; 
+    width: 37px;
+    height: 37px;
+    background: no-repeat center/80% url("ikea/images/trolly.png")/cover;
+    /* background-repeat:no-repeat;
+    background-size:cover; */
+}
+
+
+.main-wrap {
+    padding: 0 10px;
+}
+
+.notice {
+    margin-top:20px;
+    background: white;
+    filter: drop-shadow(2px 2px 2px #c7c9c8);
+    border-left: 4px solid #0058ab;
+    border-radius: 5px;
+    padding: 2px;
+
+}
+
+.paragraph {
+    margin-top: 1rem;
+    font-size: 16px;
+    font-family: NotoIKEALatin,Helvetica,Arial,sans-serif;
+}
+
+/* .paragraph svg {
+    fill: #0058a3;
+    flex-shrink: 0;
+    margin-right: 0.75rem;
+    display: inline-block;
+} */
