@@ -39,7 +39,7 @@ body {
 .nav-bar__items {
     display: inline-block;
     vertical-align: middle;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: calc(100vw - 98.4px);
     /* text-align: right; */
     /* height: 28px; */
@@ -67,7 +67,9 @@ body {
     display:inline-block; 
     width: 37px;
     height: 37px;
-    background: no-repeat center/80% url("ikea/images/trolly.png")/cover;
+    background: url("images/trolly.png") 50% / 37px no-repeat, white;
+    vertical-align: bottom;
+    padding: 5px;
     /* background-repeat:no-repeat;
     background-size:cover; */
 }
