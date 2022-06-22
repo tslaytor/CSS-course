@@ -188,7 +188,7 @@ button.navbar-toggle span {
 
 .feature-light-green {
     padding: 42px;
-    height: 485px;
+    /* height: 290px; */
     margin-bottom: 21px;
     background: rgb(181, 204, 162);
 }
@@ -274,7 +274,31 @@ hr.divider {
 
 }
 
-.new-ideas {
+div.new-ideas h2 {
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 18.2px;
+    letter-spacing: -1.1375px;
+    margin: 14px 0;
+}
+
+nav.thumb-nav a {
+    display: block;
+    list-style: none;
+    text-align: center;
+    text-decoration: none;
+    padding: 7px 14px;
+    height: 35px;
+    font-size: 14px;
+
+}
+
+nav.thumb-nav a:active {
+    color: rgb(0, 51, 153);
+    border-bottom: rgb(0, 51, 153) 2px solid;
+    font-weight: 700;
+}
+
+.thumb-items {
+    margin-top: 42px;
+    padding: 0 10px;
 }
