@@ -298,7 +298,28 @@ nav.thumb-nav a:active {
     font-weight: 700;
 }
 
-.thumb-items {
-    margin-top: 42px;
+.gap {
+    height: 42px;
     padding: 0 10px;
+}
+
+.thumb-wrap {
+    text-align: center;
+}
+
+.anava {
+    width: 168px;
+    padding: 0 14px 38px 14px;
+    display: inline-block;
+    text-align: center;
+}
+
+.thumb-item {
+    display: inline-block;
+    width: 140px;
+    padding: 17.5px;
+}
+
+.thumb-item img {
+    width: 100%;
 }
