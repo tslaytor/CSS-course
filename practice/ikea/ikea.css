@@ -303,23 +303,63 @@ nav.thumb-nav a:active {
     padding: 0 10px;
 }
 
-.thumb-wrap {
+.scroller {
     text-align: center;
+    padding: 0 10px;
 }
 
-.anava {
-    width: 168px;
-    padding: 0 14px 38px 14px;
+.scroll-card {
+    width: 165px;
+    padding: 0 14px 28px 14px;
     display: inline-block;
     text-align: center;
 }
 
-.thumb-item {
+.card-head {
     display: inline-block;
     width: 140px;
     padding: 17.5px;
+    position: relative;
+
 }
 
-.thumb-item img {
+.card-head img {
     width: 100%;
+}
+
+.card-body {
+    width: 140px;
+    padding: 0 17.5px;
+}
+
+.card-body h3 {
+    margin: 0;
+    margin-right: 7px;
+    font-size: 16.8px;
+    letter-spacing: -1.05px;
+}
+
+.card-body-text {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.35px;
+}
+
+.orange-badge {
+    color: #fff;
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+    left: 17.5px;
+    width: 33.3px;
+    height: 33.3px;
+    background-color: #f07f3b;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.orange-badge span {
+    vertical-align: middle;
+    line-height: 33.3px;
+    font-size: 14px;
 }
