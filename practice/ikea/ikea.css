@@ -306,6 +306,7 @@ nav.thumb-nav a:active {
 .scroller {
     text-align: center;
     padding: 0 10px;
+    display: flex;
 }
 
 .scroll-card {
@@ -365,12 +366,18 @@ nav.thumb-nav a:active {
     font-size: 14px;
 }
 
+
 @media (min-width: 576px){
+    .flex-container {
+        display: flex;
+    }
+
     .goes-inline {
-        display: inline-block;
-        width: 49%;
+        /* display: inline-block; */
+        /* width: 49%; */
         padding: 0 10px;
-        vertical-align: top;
+        flex: 1;
+        /* vertical-align: top; */
     }
 
     section {
@@ -385,6 +392,7 @@ nav.thumb-nav a:active {
     }
 
     .row-of-three {
-        width: 32%;
+        /* width: 32%; */
+        flex: 1;
     }
 }

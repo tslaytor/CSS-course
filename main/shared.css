@@ -63,7 +63,7 @@ main {
 }
 
 .main-nav {
-    display: inline-flex;
+    /* display: inline-flex; */
     align-items: center;
 }
 
@@ -225,7 +225,7 @@ margin: 0.4rem 0;
 }
 
 .main-footer__link {
-    display: block;
+    /* display: block; */
     margin: 0.5rem 0;
 }
 
