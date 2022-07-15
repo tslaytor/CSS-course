@@ -1,0 +1,12 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 5rem;
+    grid-auto-rows: 10rem;
+  }
+  
+.item {
+  /* width: 5rem;
+  height: 4rem; */
+border: solid black 1px;
+}

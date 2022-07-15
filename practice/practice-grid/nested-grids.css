@@ -1,0 +1,53 @@
+*{box-sizing: border-box;}
+
+html {
+    height: 100%;
+    background-color: crimson;
+    padding: 1rem;
+}
+
+body {
+    background-color: rgb(91, 120, 121);
+    padding: 2rem;
+    height: 100%;
+    color: wheat;
+    font-family: 'Edu SA Beginner', cursive;
+    font-size: 1.5rem;
+}
+
+.item {
+    background-color: cornflowerblue;
+    border: black solid 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    padding: 0.5rem;
+   
+    /* height: 100%; */
+}
+
+.wrap {
+    background-color: darkgoldenrod;
+    padding: 1.5rem;
+    border: solid black 2px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-rows: minmax(90px, auto); */
+    grid-auto-rows: minmax(90px, auto);
+    gap: 0.5rem;
+    /* align-items: flex-end; */
+}
+
+
+.span {
+    grid-column: 2 / -1;
+}
+
+.spam {
+    padding: 0;
+    background-color: rgb(211, 101, 221);
+    border: dashed rgb(129, 25, 14) 2px;
+    color: rgb(0, 0, 0);
+
+}
