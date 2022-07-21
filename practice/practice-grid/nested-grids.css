@@ -44,10 +44,22 @@ body {
     grid-column: 2 / -1;
 }
 
-.spam {
+.sub {
+    /* grid-template-columns: subgrid; */
     padding: 0;
     background-color: rgb(211, 101, 221);
     border: dashed rgb(129, 25, 14) 2px;
     color: rgb(0, 0, 0);
 
+}
+
+.span-2 {
+    grid-row: span 4;
+    /* grid-column: 3; */
+
+}
+
+.minty {
+    background-color:rgb(38, 136, 87);
+    color: rgb(15, 63, 39);
 }
