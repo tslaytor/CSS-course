@@ -20,6 +20,12 @@ body {
     /* border: 1px black solid; */
 }
 
+.spacer {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
 .logo {
     display: none;
     /* align-items: center; */
@@ -204,7 +210,9 @@ svg {
     .header-cta {
         display: flex;
         align-items: center;
-        height: 100%;
+        justify-content: flex-end;
+        /* height: 100%; */
+        align-self: stretch;
         /* margin-right: 8px; */
     }
 }
@@ -273,4 +281,17 @@ svg {
 .quick-menu__wrap:focus {
     filter: contrast(1);
     color: black;
+}
+
+@media (min-width: 950px) {
+    .spacer {
+        display: contents;
+    }
+
+    .logo,
+    .header-cta {
+        flex: 1;
+    }
+
+
 }
