@@ -239,6 +239,83 @@ svg {
     display: none;
 }
 
+.grid-wrap {
+    display: grid;
+    column-gap: 24px;
+    row-gap: 40px;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 24px;
+    margin-top: 24px;
+    grid-auto-rows: calc(42vw + 100px);
+}
+
+.grid-item {
+    /* background-color: tomato; */
+}
+
+.image-wrap {
+    height: calc(100% - 100px);
+    margin-bottom: 12px;
+}
+
+.image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.option-text {
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    grid-template-areas: "title stars"
+                          "distance distance"
+                          "date date"
+                          "price price";
+    height: 88px;
+    /* background-color: blueviolet; */
+    font-size: 15px;
+    line-height: 19px;
+    font-family: inherit;
+}
+
+.option-text > * {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+p {
+    margin: 0;
+}
+.title {
+    margin: 0;
+    grid-area: title;
+    color: #222222;
+    font-weight: 500;
+    font-size: inherit;
+}
+
+.distance {
+    grid-area: distance;
+}
+
+.date {
+    grid-area: date;
+}
+.price {
+    grid-area: price;
+}
+
+.distance,
+.date {
+    color: rgb(113, 113, 113);
+    font-weight: 300;
+}
+
+.stars {
+    grid-area: stars;
+}
 
 @media (min-width: 743px){
     .header {
