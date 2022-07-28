@@ -267,12 +267,15 @@ svg {
 
 .option-text {
     display: grid;
+    column-gap: 8px;
+    row-gap: 2px;
     grid-template-columns: 1fr max-content;
+    grid-template-rows: repeat(3, 19px) 25px;
     grid-template-areas: "title stars"
                           "distance distance"
                           "date date"
                           "price price";
-    height: 88px;
+    /* height: 88px; */
     /* background-color: blueviolet; */
     font-size: 15px;
     line-height: 19px;
@@ -305,6 +308,8 @@ p {
 }
 .price {
     grid-area: price;
+    font-weight: 500;
+    align-self: flex-end;
 }
 
 .distance,
@@ -315,6 +320,10 @@ p {
 
 .stars {
     grid-area: stars;
+}
+
+.night {
+    font-weight: 300;
 }
 
 @media (min-width: 743px){
