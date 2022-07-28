@@ -231,9 +231,9 @@ svg {
     padding: 0 16px;
 }
 
-.filter-text {
+/* .filter-text {
     
-}
+} */
 
 .scroll-button__wrap {
     display: none;
@@ -262,9 +262,9 @@ grid-auto-rows: calc(42vw + 100px); */
 
 }
 
-.grid-item {
-    /* background-color: tomato; */
-}
+/* .grid-item {
+    background-color: tomato;
+} */
 
 .image-wrap {
     height: calc(100% - 100px);
