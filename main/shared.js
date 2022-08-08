@@ -15,8 +15,17 @@ for (var i = 0; i < planButtons.length; i++){
 
 toggle_button.addEventListener('click', function(){
     console.dir(backdrop)
-    backdrop.classList.add('open')
-    mobile_nav.classList.add('open')
+    backdrop.style.display = "block"
+    setTimeout(function(){
+        backdrop.classList.add('open')
+    }, 10)
+    
+
+    mobile_nav.style.display = "block"
+    setTimeout(function(){
+        mobile_nav.classList.add('open-mob-nav')
+    }, 10)
+    
 })
 
 if (modalActionsNeg){
@@ -28,11 +37,18 @@ backdrop.addEventListener('click', close)
 
 function close(){
     backdrop.classList.remove('open')
+    setTimeout(function(){
+        backdrop.style.display = "none"
+    }, 500)
+
     if (modal){
         modal.classList.remove('open')
     }
     if (mobile_nav){
-        mobile_nav.classList.remove('open')
+        mobile_nav.classList.remove('open-mob-nav')
+        setTimeout(function(){
+            mobile_nav.style.display = "none"
+        }, 500)
     }
 }
 
