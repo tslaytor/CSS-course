@@ -53,6 +53,9 @@ main {
     color: white;
     background: #ff5454;
     padding: 0.5rem;
+    width: 12rem;
+    text-align: center;
+    transform: rotateZ(35deg) translate(3.5rem, -2rem);
 }
 
 .package__subtitle {
@@ -78,6 +81,7 @@ main {
 
 #plus {
     background: rgba(213, 255, 220, 0.95);
+    overflow: hidden;
 }
 
 #free {
