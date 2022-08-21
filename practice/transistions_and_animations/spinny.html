@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>It's a spinny thing</title>
+        <meta name='viewport' content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <link href="spinny.css" rel="stylesheet">
+        
+    </head>
+    <body>
+        <h1>Transform, Keyframe and Transition Demo</h1>
+        <h2>Rotations on the x, y and z-axis</h2>
+        <div class="grid">
+            <div class="grid-item x-axis">
+                <div class="front-face flex">x-axis</div>
+                <div class="back-face flex">This is the back</div>
+            </div>
+            <div class="grid-item y-axis">
+                <div class="front-face flex">y-axis</div>
+                <div class="back-face flex">This is the back</div>
+            </div>
+            <div class="grid-item z-axis">
+                <div class="front-face flex">z-axis</div>
+                <div class="back-face flex">This is the back</div>
+            </div>
+            <div class="grid-item x-hover">
+                <div class="front-face flex">x-axis<br>(hover)</div>
+                <div class="back-face flex">This is the back</div>
+            </div>
+            <div class="grid-item y-hover">
+                <div class="front-face flex">y-axis<br>(hover)</div>
+                <div class="back-face flex">This is the back</div>
+            </div>
+            <div class="grid-item z-hover">
+                <div class="front-face flex">z-axis<br>(hover)</div>
+                <div class="back-face flex">This is the back</div>
+            </div>
+            <div class="grid-item x-click">
+                <div class="front-face flex">x-axis<br>(active)</div>
+                <div class="back-face flex">This is the back</div>
+            </div>
+            <div class="grid-item y-click">
+                <div class="front-face flex">y-axis<br>(active)</div>
+                <div class="back-face flex">This is the back</div>
+            </div>
+            <div class="grid-item z-click">
+                <div class="front-face flex">z-axis<br>(active)</div>
+                <div class="back-face flex">This is the back</div>
+            </div>
+        </div>
+
+        <h2>Transitions</h2>
+        <div class="grid second">
+            <div class="grid-item second grow">
+                <div class="front-face second flex">Grow<br>(click)</div>
+            </div>
+            <div class="grid-item second shrink">
+                <div class="front-face second flex">Shrink<br>(click)</div>
+            </div>
+            <div class="grid-item second color-click">
+                <div class="front-face second color flex">Color</div>
+            </div>
+            <div class="grid-item x-hover">
+                <div class="front-face flex">x-axis<br>(hover)</div>
+            </div>
+            <div class="grid-item y-hover">
+                <div class="front-face flex">y-axis<br>(hover)</div>
+            </div>
+            <div class="grid-item z-hover">
+                <div class="front-face flex">z-axis<br>(hover)</div>
+            </div>
+            <div class="grid-item x-click">
+                <div class="front-face flex">x-axis<br>(active)</div>
+            </div>
+            <div class="grid-item y-click">
+                <div class="front-face flex">y-axis<br>(actice)</div>
+            </div>
+            <div class="grid-item z-click">
+                <div class="front-face flex">z-axis<br>(active)</div>
+            </div>
+        </div>
+    </body>
+    <script src="spinny.js"></script>
+</html>
