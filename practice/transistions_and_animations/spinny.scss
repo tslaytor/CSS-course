@@ -2,7 +2,8 @@
     box-sizing: border-box;
 }
 
-$grid-sizing: repeat(3, 8rem);
+$grid-column-sizing: repeat(3, 8rem);
+$grid-row-sizing: repeat(2, 8rem);
 
 $default-rotation: 3s infinite linear backwards;
 $rotation-deg: 360deg;
@@ -23,11 +24,17 @@ h1, h2 {
     font: 1rem sans-serif;
 }
 
+span {
+    div {
+        font-size: 0.75rem;
+    }
+}
+
 .grid {
     display: grid;
     gap: 2rem;
-    grid-template-columns: $grid-sizing;
-    grid-template-rows: $grid-sizing;
+    grid-template-columns: $grid-column-sizing;
+    grid-template-rows: $grid-row-sizing;
     grid-auto-rows: 8rem;
     justify-content: center;    
     width: 80%;
@@ -42,7 +49,7 @@ h1, h2 {
     width: 100%;
     height: 100%;
     transform-style: preserve-3d;
-    border: 3px coral solid;
+    text-align: center;
 }
 
 .front-face {
@@ -53,6 +60,7 @@ h1, h2 {
     backface-visibility: hidden;
     // bug fix for Firefox below - was showing backface of text
     transform: rotate(0);
+    border: 3px coral solid;
 }
 
 .back-face {
@@ -100,7 +108,7 @@ h1, h2 {
     background-color: rgb(153, 95, 95);
 }
 
-.grid-item.second {
+.front-face.second {
     border: white 3px solid;
 }
 
@@ -133,6 +141,38 @@ h1, h2 {
 
 .color-change {
     background-color: rgb(69, 116, 67) !important;
+}
+
+.border {
+    transition: border 1s cubic-bezier(0.54, 0.04, 0.36, 0.96);
+}
+.border-change {
+    border: 10px rgb(196, 48, 176) solid !important;
+}
+
+.dashed-border {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba($color: #000000, $alpha: 0.0);
+    border: rgba($color: #fff, $alpha: 0.0) 3px dashed;
+    transition: border 0.5s ease-in;
+    z-index: 1;
+}
+
+.visible-dash {
+    border: rgba($color: #fff, $alpha: 1.0) 3px dashed !important;
+}
+
+.solid-border {
+    border: rgba($color: #fff, $alpha: 1.0) 3px solid;
+    transition: border 0.5s ease-in;
+}
+
+.invisible-border {
+    border: rgba($color: #fff, $alpha: 0.0) 3px solid !important;
 }
 
 @keyframes rotate-x {
